@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Support — VFYIELD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Support for VFYIELD: contact, FAQ, troubleshooting, and feature requests.">
+  <meta name="theme-color" content="#0b0f14">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b0f14'/%3E%3Cpath d='M32 12l20 12v16L32 52 12 40V24z' fill='none' stroke='%23e08a4b' stroke-width='3' stroke-linejoin='round'/%3E%3Ccircle cx='32' cy='32' r='4' fill='%233cd7d7'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<nav class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="brand"><span class="dot"></span>VFYIELD</a>
+    <div class="nav">
+      <a href="index.html">Overview</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="support.html" class="active">Support</a>
+    </div>
+  </div>
+</nav>
+
+<main class="page">
+
+  <div class="eyebrow">SUPPORT</div>
+  <h1>We're here to help</h1>
+  <p class="lede">The fastest way to reach us is by email. We read every message and reply within 24&ndash;48 hours.</p>
+  <p><a href="mailto:Butraminamhegqulad@gmail.com" class="cta">Email support &rarr;</a></p>
+  <p style="margin-top:14px"><small><strong>Butraminamhegqulad@gmail.com</strong> &middot; English &middot; Mon&ndash;Fri, 09:00&ndash;18:00 (UTC+8)</small></p>
+
+  <hr class="rule">
+
+  <h2>Frequently asked questions</h2>
+
+  <dl class="faq">
+
+    <div class="row">
+      <dt>What does VFYIELD do, exactly?</dt>
+      <dd>It compares two things &mdash; an image and an archetype, or two text snippets &mdash; and reports how much structural kinship they share. The patterns are heuristic: useful for learning, not for deciding. See <a href="index.html">the overview</a> for the long version.</dd>
+    </div>
+
+    <div class="row">
+      <dt>Does VFYIELD use AI or large language models?</dt>
+      <dd>No. The image engine uses average color, downscale histograms, and structural entropy. The text engine uses token frequency, set overlap, edit distance, and bigram order. Both run locally. There is no model file, no cloud inference, no GPU server. <a href="index.html#how">Read more</a>.</dd>
+    </div>
+
+    <div class="row">
+      <dt>Does VFYIELD upload my photos or text?</dt>
+      <dd>No. Nothing leaves your device. VFYIELD performs no network requests at all &mdash; no analytics, no crash reporting, no remote configuration. <a href="privacy.html">Read the full privacy policy</a>.</dd>
+    </div>
+
+    <div class="row">
+      <dt>Will VFYIELD work on iPad?</dt>
+      <dd>Yes. VFYIELD renders with a tabbed layout on iPhone and a sidebar layout on iPad. All features are identical on both form factors.</dd>
+    </div>
+
+    <div class="row">
+      <dt>Will it work in Airplane Mode?</dt>
+      <dd>Yes. VFYIELD does not need internet access.</dd>
+    </div>
+
+    <div class="row">
+      <dt>Can I delete my history?</dt>
+      <dd>Yes. Open Library &rarr; History and tap <em>Clear</em>. Deleting the app uninstalls everything.</dd>
+    </div>
+
+  </dl>
+
+  <hr class="rule">
+
+  <h2>Troubleshooting</h2>
+
+  <h3>The camera button doesn't open the camera</h3>
+  <p>Open iOS Settings &rarr; VFYIELD &rarr; Camera and make sure it is set to <em>Allow</em>. If you previously selected <em>Deny</em>, iOS will not show the prompt again until you reset access in Settings.</p>
+
+  <h3>"Choose from Library" opens but I cannot see all of my photos</h3>
+  <p>This is expected. We use <code>PHPickerViewController</code>, which is a separate picker process. It does not require granting access to your entire library &mdash; you select one photo at a time and that selection is what we receive.</p>
+
+  <h3>Result card won't save to Photos</h3>
+  <p>Open iOS Settings &rarr; VFYIELD &rarr; Photos and switch from <em>None</em> / <em>Selected Photos</em> to <em>Add Photos Only</em>. Then re-trigger the <em>Save to Photos</em> flow inside the app.</p>
+
+  <h3>An analysis was scored but doesn't match what I see</h3>
+      <p>That can happen. The image engine is a heuristic &mdash; it scores structure, not meaning. Try a clearer, more centered subject (good lighting, single dominant color, no small text), or compare with the seven reference archetypes in <a href="index.html">the overview</a>.</p>
+
+  <h3>Haptics don't fire / my phone stays silent</h3>
+  <p>Open Settings inside the app and toggle <em>Haptic Feedback</em>. Also make sure your iPhone is not in Silent Mode (the switch on the left side of your device).</p>
+
+  <h3>The theme switcher doesn't change everything</h3>
+  <p>Some system widgets (status bar tint, certain segmented controls) only re-render when you switch tabs or reopen the relevant screen. The accent always updates everywhere &mdash; just give the device a beat.</p>
+
+  <hr class="rule">
+
+  <h2>Feature requests &amp; bug reports</h2>
+  <p>We treat every email as a feature request triage ticket. To help us act quickly, please include:</p>
+  <ul>
+    <li>Your iPhone model and iOS version (Settings &rarr; General &rarr; About).</li>
+    <li>The app version (Settings inside the app &rarr; About).</li>
+    <li>What you expected to happen, and what actually happened.</li>
+    <li>For bugs: a screen recording or screenshot if possible.</li>
+  </ul>
+  <p>Send to <a href="mailto:Butraminamhegqulad@gmail.com">Butraminamhegqulad@gmail.com</a>.</p>
+
+  <hr class="rule">
+
+  <h2>Languages</h2>
+  <p>Currently the app ships in English. We plan to add more locales once the product stabilizes. If you'd like to help translate, write to us &mdash; we'd love that.</p>
+
+  <hr class="rule">
+
+  <h2>Press &amp; partnerships</h2>
+  <p>For media inquiries, partnerships, or educational distribution, please use the same address: <a href="mailto:Butraminamhegqulad@gmail.com">Butraminamhegqulad@gmail.com</a>. Allow up to a week for a reply.</p>
+
+  <footer class="footer">
+    <div class="cols">
+      <a href="index.html">Overview</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="support.html">Support</a>
+      <a href="mailto:Butraminamhegqulad@gmail.com">Email</a>
+    </div>
+    <div>&copy; 2026 VFYIELD. Built on-device, in care.</div>
+  </footer>
+
+</main>
+
+</body>
+</html>

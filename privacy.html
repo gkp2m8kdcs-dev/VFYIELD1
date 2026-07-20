@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Privacy Policy — VFYIELD</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VFYIELD Privacy Policy: how the app handles — and explicitly does not handle — your data. Fully on-device, no tracking, no analytics.">
+  <meta name="theme-color" content="#0b0f14">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b0f14'/%3E%3Cpath d='M32 12l20 12v16L32 52 12 40V24z' fill='none' stroke='%23e08a4b' stroke-width='3' stroke-linejoin='round'/%3E%3Ccircle cx='32' cy='32' r='4' fill='%233cd7d7'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<nav class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="brand"><span class="dot"></span>VFYIELD</a>
+    <div class="nav">
+      <a href="index.html">Overview</a>
+      <a href="privacy.html" class="active">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="support.html">Support</a>
+    </div>
+  </div>
+</nav>
+
+<main class="page">
+
+  <div class="eyebrow">PRIVACY POLICY</div>
+  <h1>Your data stays on this device</h1>
+  <p class="lede">VFYIELD is built around a single principle: nothing you analyze leaves your iPhone. The image and text engines run entirely on-device, request only the permissions they need, and never contact a server.</p>
+  <p class="updated">Last updated: July 2026</p>
+
+  <hr class="rule">
+
+  <h2>Summary in one paragraph</h2>
+  <p>VFYIELD collects no data about you. It performs no analytics, sends no network requests, embeds no third-party SDKs, and does not track you across apps or websites. The app uses only two operating-system permissions &mdash; Camera and Photos &mdash; and only when you explicitly tap the corresponding button. Nothing you analyze is transmitted, sold, or stored outside your device.</p>
+
+  <hr class="rule">
+
+  <h2>1. What we collect</h2>
+
+  <div class="kv">
+    <div class="k">PERSONAL DATA</div>
+    <div class="v">None. We do not collect names, email addresses, phone numbers, or any other personal identifier.</div>
+  </div>
+  <div class="kv">
+    <div class="k">USAGE DATA</div>
+    <div class="v">None. We do not record which features you use, how long you use them, or how you arrived at any screen.</div>
+  </div>
+  <div class="kv">
+    <div class="k">DIAGNOSTICS</div>
+    <div class="v">None. No crash reporting, no performance telemetry, no A/B testing infrastructure is bundled into the app.</div>
+  </div>
+  <div class="kv">
+    <div class="k">LOCATION</div>
+    <div class="v">Never accessed. VFYIELD does not request your location.</div>
+  </div>
+  <div class="kv">
+    <div class="k">CONTACTS</div>
+    <div class="v">Never accessed. VFYIELD does not read your contacts.</div>
+  </div>
+  <div class="kv">
+    <div class="k">TRACKING</div>
+    <div class="v">Never. VFYIELD does not use the IDFA, does not fingerprint your device, and contains no advertising SDKs.</div>
+  </div>
+
+  <hr class="rule">
+
+  <h2>2. What we store on your device</h2>
+  <p>VFYIELD writes a small amount of data into the app's private sandbox so that your past analyses survive when you close and reopen the app:</p>
+  <ul>
+    <li><strong>History of analyses</strong> &mdash; For each run, VFYIELD stores a thumbnail of the captured or imported image (downsized to a maximum edge of 512 pixels), the dominant hue, the verdict, the score breakdown, and (for text comparisons) the original left/right inputs you typed. This data lives in the app's Documents directory, which is private to the app and inaccessible to other apps.</li>
+    <li><strong>Two preference toggles</strong> &mdash; Whether haptic feedback is enabled, and whether monospaced metrics are enabled. Each is a single boolean stored under <code>pref.haptics</code> and <code>pref.mono</code> in <code>UserDefaults</code>.</li>
+    <li><strong>Selected accent theme</strong> &mdash; A single string (<code>copper</code>, <code>iris</code>, or <code>mint</code>) stored under <code>pref.theme</code>.</li>
+  </ul>
+  <p>You can erase all of this at any time: open the app, go to Library &rarr; History, and tap <em>Clear</em>. Removing the app uninstalls everything stored by VFYIELD from your device.</p>
+
+  <hr class="rule">
+
+  <h2>3. Permissions we ask for, and why</h2>
+
+  <div class="kv">
+    <div class="k">CAMERA</div>
+    <div class="v">Used only when you tap <em>Capture with Camera</em>. The camera is not accessed in the background and no image is uploaded, even if you are online.</div>
+  </div>
+  <div class="kv">
+    <div class="k">PHOTOS (READ)</div>
+    <div class="v">Used only when you tap <em>Choose from Library</em> on the image analysis screen. We use the modern <code>PHPickerViewController</code>, which runs in a separate process and does not require granting your entire photo library to the app.</div>
+  </div>
+  <div class="kv">
+    <div class="k">PHOTOS (WRITE)</div>
+    <div class="v">Used only when you tap <em>Save to Photos</em> in the share sheet. VFYIELD saves a generated composite image (the rendered result card) and nothing else.</div>
+  </div>
+
+  <p>You can revoke any of these at any time from iOS Settings &rarr; VFYIELD &rarr; Privacy.</p>
+
+  <hr class="rule">
+
+  <h2>4. Network behavior</h2>
+  <p>VFYIELD does not initiate network requests. The app binary contains no analytics SDK, no advertising SDK, no crash reporter, and no remote-configuration service. During normal use the app operates entirely offline. We may update the app over the App Store, but updates are delivered through Apple and are not initiated by the app itself.</p>
+
+  <hr class="rule">
+
+  <h2>5. Children</h2>
+  <p>VFYIELD is intended for a general audience and does not knowingly collect any information from children under 13 (or the age defined by local regulation). Because the app collects no information at all, this requirement is met by construction.</p>
+
+  <hr class="rule">
+
+  <h2>6. Your rights</h2>
+  <p>Because VFYIELD collects no data, there is no account to delete, no data to export, and no profile to request. If you want the app to forget everything, delete it &mdash; that is sufficient.</p>
+  <p>For questions about this policy, contact <a href="mailto:Butraminamhegqulad@gmail.com">Butraminamhegqulad@gmail.com</a>.</p>
+
+  <hr class="rule">
+
+  <h2>7. Changes to this policy</h2>
+  <p>If we ever change this policy &mdash; for example, if a future version of VFYIELD adds an opt-in feature that contacts a server &mdash; we will update the policy on this page and surface the change inside the app via the <em>Privacy &amp; Notices</em> screen. The change date at the top of this document will reflect the most recent update.</p>
+
+  <hr class="rule">
+
+  <h2>8. Disclaimer</h2>
+  <p>VFYIELD is an educational similarity tool. The patterns it surfaces are heuristic comparisons for learning and curiosity &mdash; not scientific measurements, medical advice, financial guidance, or expert analysis. Do not rely on its output for safety-, health-, finance-, or legal-critical decisions.</p>
+
+  <footer class="footer">
+    <div class="cols">
+      <a href="index.html">Overview</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms of Use</a>
+      <a href="support.html">Support</a>
+      <a href="mailto:Butraminamhegqulad@gmail.com">Email</a>
+    </div>
+    <div>&copy; 2026 VFYIELD. Built on-device, in care.</div>
+  </footer>
+
+</main>
+
+</body>
+</html>
